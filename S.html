@@ -15,16 +15,20 @@
         div.sprite {
             margin: 0 auto;
             width: 40%;
+/*            Change this to what ever value you desire*/
             height: 0;
             padding-bottom: 40%;
             background-image: url("le-cloud-copy.png");
+/*            Add the sprite sheet here, must be on a staright line*/
             background-position: 0 0;
             background-size: 1800%;
+/*            I have 18 sprites in the sheet thus it's 1800%, if it was 4 you'd use 400% and so on*/
             display: block;
         }
         div.sprite:hover {
 /*            background-position: 500% 0;*/
             animation: play .9s steps(18);
+/*            18 steps to go over al the sprites i have, if you had 4 in the sprite the value would be 4 for example */
         }
         @keyframes play {
             100% {
