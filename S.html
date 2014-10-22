@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Responsive Background Image Sprite - Brian Johnson Design</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            background: #000;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        div.sprite {
+            margin: 0 auto;
+            width: 40%;
+            height: 0;
+            padding-bottom: 40%;
+            background-image: url("le-cloud-copy.png");
+            background-position: 0 0;
+            background-size: 1800%;
+            display: block;
+        }
+        div.sprite:hover {
+/*            background-position: 500% 0;*/
+            animation: play .9s steps(18);
+        }
+        @keyframes play {
+            100% {
+                background-position: 1800% 0;
+            }
+        }
+    </style>
+    <script src="prefixfree.min.js"></script>
+</head>
+
+<body>
+    <div class="sprite"></div>
+
+</body>
+
+</html>
